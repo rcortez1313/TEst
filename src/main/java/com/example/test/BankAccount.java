@@ -3,5 +3,6 @@ package com.example.test;
 public class BankAccount {
     //sadfsdf
 
-dfasdfsdfsdafsdfsdfsdfsdfsdfsdaf
+    int x = 50;
+    //sdfsdsdfsdfsdfsdf
 }
