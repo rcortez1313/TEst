@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.HelloController">
+   <children>
+      <Button layoutX="135.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleAddPerson" text="Create Person" />
+      <Label fx:id="lblLabel" layoutX="150.0" layoutY="236.0" text="Clients" />
+      <TextField fx:id="txtPName" layoutX="105.0" layoutY="34.0" />
+      <Label fx:id="lblLabel1" layoutX="59.0" layoutY="136.0" text="name" />
+      <TextField fx:id="txtSName" layoutX="105.0" layoutY="132.0" />
+      <Button layoutX="135.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleAddStock" text="Create Stock" />
+      <ListView fx:id="lstPeople" layoutX="65.0" layoutY="264.0" onMouseClicked="#handleLstPeople" prefHeight="200.0" prefWidth="195.0" />
+      <Label fx:id="lblLabel11" layoutX="44.0" layoutY="38.0" text="name" />
+      <ListView fx:id="lstStocksAvailable" layoutX="269.0" layoutY="264.0" onMouseClicked="#handleLstStocksAvailable" prefHeight="200.0" prefWidth="260.0" />
+      <Label fx:id="lblLabel2" layoutX="363.0" layoutY="236.0" text="Stocks Available" />
+      <ListView fx:id="lstStocksOwned" layoutX="535.0" layoutY="264.0" onMouseClicked="#handlelstStocksOwned" prefHeight="200.0" prefWidth="285.0" />
+      <Label fx:id="lblLabel21" layoutX="592.0" layoutY="236.0" text="Stocks Owned" />
+      <Label fx:id="lblLabel12" layoutX="282.0" layoutY="473.0" text="Click on a name and then a stock to buy or sell" />
+      <TextField fx:id="txtAmount" layoutX="405.0" layoutY="495.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label fx:id="lblLabel121" layoutX="297.0" layoutY="499.0" text="Number of Shares" />
+      <Button layoutX="329.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleBuy" text="Buy" />
+      <Button layoutX="413.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleSell" text="Sell" />
+      <Label fx:id="lstInfo" layoutX="269.0" layoutY="566.0" text="Information Displayed Here" />
+      <Button layoutX="282.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleDay" text="Advance a Day" />
+      <LineChart fx:id="priceChart" layoutX="393.0" layoutY="19.0" prefHeight="175.0" prefWidth="316.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
