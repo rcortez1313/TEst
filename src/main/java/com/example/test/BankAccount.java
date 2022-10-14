@@ -3,6 +3,6 @@ package com.example.test;
 public class BankAccount {
     //sadfsdf
 
-    int x = 2;
-
+    int x = 5;
+    //sdfsdsdfsdfsdfsdf
 }
